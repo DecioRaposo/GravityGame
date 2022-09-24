@@ -4,7 +4,7 @@
 }
 
 :root {
-    --text-color: hsl(328, 100%, 54%);
+    --text-color: #ef7bf8;
 }
 
 .wrapper {
@@ -32,8 +32,8 @@
     position: fixed;
     clip-path: polygon(0% 65%, 100% 50%, 100% 100%, 0% 100%);
     color: transparent;
-    background: -webkit-gradient linear-gradient(500deg, cyan 50%, var(--text-color) 65%);
-    background: linear-gradient(155deg, cyan 15%, var(--text-color) 80%);
+    /* background: -webkit-gradient linear-gradient(500deg, black 50%, var(--text-color) 65%); */
+    background: linear-gradient(155deg, #90f8da 50%, var(--text-color) 75%);
     background-clip: text;
     -webkit-background-clip: text;
     transform: translateX(-0.03em);
@@ -47,7 +47,7 @@
     border-color: black;
     position: absolute;
     top: 1px;
-    left: 25vw;
+    left: 26vw;
     overflow: auto;
     background: url(/Images/Waterfall\ by\ pixeljeff\ on\ DeviantArt.gif);
 }
