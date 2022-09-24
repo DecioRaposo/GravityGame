@@ -8,14 +8,14 @@ var both = 0;
 function moveLeft() {
     var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     if (left > 0) {
-        character.style.left = left - 2 + "px";
+        character.style.left = left - 7 + "px";
     }
 }
 //Ball move to the Right
 function moveRight() {
     var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
-    if (left < 380) {
-        character.style.left = left + 2 + "px";
+    if (left < 776) {
+        character.style.left = left + 7 + "px";
     }
 }
 document.addEventListener("keydown", event => {

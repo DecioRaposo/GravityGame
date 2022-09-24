@@ -35,25 +35,26 @@ var block = setInterval(function () {
     //Game Over
     if (characterTop < 0) {
         alert("Game Over! Your Score " + (counter - 9));
-        clearInterval(blocks);
+        clearInterval(block);
         location.reload();
     }
     //Loops the array
     for (var i = 0; i < currentBlocks.length; i++) {
         let current = currentBlocks[i];
-        let iblock = document.getElementById("block" + current);
-        let ihole = document.getElementById("hole" + current);
-        let iblockTop = parseFloat(window.getComputedStyle(iblock).getPropertyValue("top"));
-        iblock.style.top = iblockTop - 0.5 + "px";
-        ihole.style.top = iblockTop - 0.5 + "px";
-        if (iblockTop < -20) {
+        let block = document.getElementById("block" + current);
+        let hole = document.getElementById("hole" + current);
+        let blockTop = parseFloat(window.getComputedStyle(block).getPropertyValue("top"));
+        block.style.top = blockTop - 0.5 + "px";
+        hole.style.top = blockTop - 0.5 + "px";
+        if (blockTop < -20) {
             currentBlocks.shift();
-            iblock.remove();
-            ihole.remove();
+            block.remove();
+            hole.remove();
         }
-        if (iblockTop - 20 < characterTop && iblockTop > characterTop) {
+        if (blockTop - 20 < characterTop && blockTop > characterTop) {
             drop++;
-            if (iholeLeft <= characterLeft && iholeLeft + 20 >= characterLeft) {
+            if (holeLeft <= characterLeft &&
+                holeLeft + 20 >= characterLeft) {
                 drop = 0;
             }
         }
