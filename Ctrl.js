@@ -14,7 +14,7 @@ function moveLeft() {
 //Ball move to the Right
 function moveRight() {
     var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
-    if (left < 776) {
+    if (left < 623) {
         character.style.left = left + 7 + "px";
     }
 }
