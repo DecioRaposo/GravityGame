@@ -41,7 +41,7 @@
 
 /*Game*/
 #game {
-    width: 800px;
+    width: 650px;
     height: 649px;
     border: 1px solid black;
     border-color: black;
@@ -50,13 +50,14 @@
     left: 26vw;
     overflow: auto;
     background: url(/Images/Waterfall\ by\ pixeljeff\ on\ DeviantArt.gif);
+    background-size:cover;
 }
 
 #character {
     width: 20px;
     height: 20px;
-    background-color: deeppink;
-    border: 1px solid black;
+    background-image: linear-gradient(145deg, #FFF6B7 20%, #F6416C 100%);
+    border: solid cyan;
     border-radius: 50%;
     position: relative;
     top: 600px;
