@@ -10,7 +10,6 @@
 .wrapper {
     display: grid;
     place-content: center;
-    background-color: var(background);
     min-height: 100vh;
     font-family: "Oswald", sans-serif;
     font-size: clamp(1rem, 1.5rem + 3vw, 3rem);
@@ -65,19 +64,20 @@
     z-index: 1000000;
 }
 
-#block {
-    width: 800px;
+.bar {
+    width: 650px;
     height: 20px;
-    background-color: cyan;
     position: relative;
     top: 100px;
     margin-top: -20px;
+    background: linear-gradient(145deg, #FFF6B7 20%, #F6416C 100%);
+    color:transparent;
 }
 
-#hole {
+.hole {
     width: 70px;
     height: 20px;
-    background-color: black;
+    background: linear-gradient(145deg, cyan 20%, #F6416C 75%);
     position: relative;
     top: 100px;
     margin-top: -20px;
