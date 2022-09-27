@@ -74,7 +74,7 @@
     color:transparent;
 }
 
-.hole {
+.gap {
     width: 70px;
     height: 20px;
     background: linear-gradient(145deg, cyan 20%, #F6416C 75%);
