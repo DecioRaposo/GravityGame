@@ -1,5 +1,7 @@
 var section = document.querySelector('section');
-var images = [];
+var images = [
+
+];
 
 setInterval(function () {
     var bg = images[Math.floor(Math.random() * images.length)];
