@@ -48,8 +48,7 @@
 #character {
     width: 20px;
     height: 20px;
-    background-image: linear-gradient(145deg, #FFF6B7 20%, #F6416C 100%);
-    border: solid cyan;
+    background-image: linear-gradient(145deg, #00dbde 15%,#fc00ff 100%);
     border-radius: 50%;
     position: relative;
     top: 440px;
@@ -64,14 +63,14 @@
     position: relative;
     top: 100px;
     margin-top: -20px;
-    background: linear-gradient(145deg, #FFF6B7 20%, #F6416C 100%);
+    background: linear-gradient(177deg, black 40%, #2A2A72 100%);
     color:transparent;
 }
 
 .gap {
     width: 70px;
     height: 20px;
-    background: linear-gradient(145deg, cyan 20%, #F6416C 75%);
+    background: linear-gradient(145deg, #00416A 20%, #2376DD 100%);
     position: relative;
     top: 100px;
     margin-top: -20px;
