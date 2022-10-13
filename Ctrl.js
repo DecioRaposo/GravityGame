@@ -1,5 +1,5 @@
 //Game Control
-var character = document.getElementById("character");
+var character = document.getElementById("ball");
 var game = document.getElementById("game");
 var setInterval;
 var stepLeftRightValue = 0;
@@ -11,7 +11,7 @@ function moveLeft() {
         window.getComputedStyle(character).getPropertyValue("left")
     );
     if (left > 0) {
-        character.style.left = left - 7 + "px";
+        character.style.left = left - 6 + "px";
     }
 }
 //Ball move to the Right
@@ -20,7 +20,7 @@ function moveRight() {
         window.getComputedStyle(character).getPropertyValue("left")
     );
     if (left < 630) {
-        character.style.left = left + 7 + "px";
+        character.style.left = left + 6 + "px";
     }
 }
 document.addEventListener("keydown", (event) => {
